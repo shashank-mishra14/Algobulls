@@ -1,14 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
 import './LoginSignup.css'
 import email from '../../Assets/email.svg'
 import password from '../../Assets/password.svg'
 import person from '../../Assets/person.svg'
 
-export const LoginSignup = () => {
+const LoginSignup = () => {
+
+    const [action, setAction] = useState('Login');
+
+
   return (
     <div className='container'>
         <div className='header'>
-            <div className='text'>Sign Up</div>
+            <div className='text'>{action}</div>
             <div className='underline'></div>
         </div>  
         <div className='inputs'>
@@ -27,11 +32,9 @@ export const LoginSignup = () => {
         </div>
         <div className="forgot-password">Lost Password <span>Click Here!</span></div>
         <div className="submit-container">
-            <div className="submit">Sign Up</div>
-            <div className="submit">Login</div>
+            <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
+            <div className={action==="Sign Up"?"submit gray":"submit"}>Login</div>
         </div>
     </div>
   )
 }
-
-export default LoginSignup
