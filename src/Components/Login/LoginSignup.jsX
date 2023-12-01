@@ -13,17 +13,22 @@ export const LoginSignup = () => {
         </div>  
         <div className='inputs'>
             <div className="input">
-                <img src="" alt="" />
-                <input type="text" />
+                <img src={person} alt="" />
+                <input type="text"  placeholder='Name'/>
             </div>
             <div className="input">
-                <img src="" alt="" />
-                <input type="email" />
+                <img src={email} alt="" />
+                <input type="email" placeholder='Email Id'/>
             </div>
             <div className="input">
-                <img src="" alt="" />
-                <input type="password" />
+                <img src={password} alt="" />
+                <input type="password" placeholder='Password'/>
             </div>
+        </div>
+        <div className="forgot-password">Lost Password <span>Click Here!</span></div>
+        <div className="submit-container">
+            <div className="submit">Sign Up</div>
+            <div className="submit">Login</div>
         </div>
     </div>
   )
