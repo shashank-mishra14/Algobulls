@@ -1,7 +1,7 @@
 import "./topbar.css";
-import {Search, Person, Chat, Notifications} from "@material-ui/icons";
+import {SearchIcon, PersonIcon, ChatIcon, NotificationsIcon} from "@mui/icons-material";
 
-export const Topbar = () => {
+ const Topbar = () => {
   return (
     <div className="topbarContainer">
     <div className="topbarLeft">
@@ -9,7 +9,7 @@ export const Topbar = () => {
     </div>
     <div className="topbarCenter">
         <div className="searchbar">
-            <Search className="searchIcon"/>
+            <SearchIcon className="searchIcon"/>
             <input placeholder="Search for anything" className="searchInput" />
         </div>
     </div>
@@ -21,15 +21,15 @@ export const Topbar = () => {
         </div>
         <div className="topbarIcons">
             <div className="topbarIconItem">
-                <Person/>
+                <PersonIcon/>
                 <span className="topbarIconBadge">3</span>
             </div>
             <div className="topbarIconItem">
-                <Chat/>
+                <ChatIcon/>
                 <span className="topbarIconBadge">1</span>
             </div>
             <div className="topbarIconItem">
-                <Notifications/>
+                <NotificationsIcon/>
                 <span className="topbarIconBadge">5</span>
             </div>
         </div>
@@ -38,3 +38,5 @@ export const Topbar = () => {
     </div>
   )
 }
+
+export default Topbar;

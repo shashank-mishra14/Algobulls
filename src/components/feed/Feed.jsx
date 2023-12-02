@@ -1,7 +1,7 @@
 import "./feed.css";
 import Share from "../share/Share";
 
-export const Feed = () => {
+ const Feed = () => {
   return (
     <div className="feed">
       <div className="feedWrapper">
@@ -10,3 +10,4 @@ export const Feed = () => {
     </div>
   )
 }
+export default Feed

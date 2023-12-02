@@ -1,45 +1,45 @@
 import "./sidebar.css";
-import {RssFeed, Chats, Videos, Groups, Bookmarks, Questions, Jobs, Events, Courses} from "@material-ui/icons"
+import {RssFeedIcon, ChatsIcon, VideosIcon, GroupsIcon, BookmarksIcon, QuestionsIcon, JobsIcon, EventsIcon, CoursesIcon} from "@mui/icons-material";
 
-export const Sidebar = () => {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon"/>
+            <RssFeedIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Feed</span>
           </li>
           <li className="sidebarListItem">
-            <Chats className="sidebarIcon"/>
+            <ChatsIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Chats</span>
           </li>
           <li className="sidebarListItem">
-            <Videos className="sidebarIcon"/>
+            <VideosIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Vidoes</span>
           </li>
           <li className="sidebarListItem">
-            <Groups className="sidebarIcon"/>
+            <GroupsIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Groups</span>
           </li>
           <li className="sidebarListItem">
-            <Bookmarks className="sidebarIcon"/>
+            <BookmarksIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Bookmarks</span>
           </li>
           <li className="sidebarListItem">
-            <Questions className="sidebarIcon"/>
+            <QuestionsIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Questions</span>
           </li>
           <li className="sidebarListItem">
-            <Jobs className="sidebarIcon"/>
+            <JobsIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Jobs</span>
           </li>
           <li className="sidebarListItem">
-            <Events className="sidebarIcon"/>
+            <EventsIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Events</span>
           </li>
           <li className="sidebarListItem">
-            <Courses className="sidebarIcon"/>
+            <CoursesIcon className="sidebarIcon"/>
             <span className="sidebarListItemText">Courses</span>
           </li>
         </ul>
@@ -71,3 +71,5 @@ export const Sidebar = () => {
     </div>
   )
 }
+
+export default Sidebar
