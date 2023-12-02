@@ -1,5 +1,5 @@
 import "./topbar.css";
-import {Search} from "@material-ui/icons";
+import {Search, Person, Chat, Notifications} from "@material-ui/icons";
 
 export const Topbar = () => {
   return (
@@ -13,7 +13,28 @@ export const Topbar = () => {
             <input placeholder="Search for anything" className="searchInput" />
         </div>
     </div>
-    <div className="topbarRight"></div>
+    <div className="topbarRight">
+        <div className="topbarLink">
+            <span className="topbarLink">Homepage</span>
+            <span className="topbarLink">Timeline</span>
+
+        </div>
+        <div className="topbarIcons">
+            <div className="topbarIconItem">
+                <Person/>
+                <span className="topbarIconBadge">3</span>
+            </div>
+            <div className="topbarIconItem">
+                <Chat/>
+                <span className="topbarIconBadge">1</span>
+            </div>
+            <div className="topbarIconItem">
+                <Notifications/>
+                <span className="topbarIconBadge">5</span>
+            </div>
+        </div>
+        <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
+    </div>
     </div>
   )
 }
