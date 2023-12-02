@@ -9,7 +9,7 @@ export const Topbar = () => {
     </div>
     <div className="topbarCenter">
         <div className="searchbar">
-            <Search/>
+            <Search className="searchIcon"/>
             <input placeholder="Search for anything" className="searchInput" />
         </div>
     </div>
