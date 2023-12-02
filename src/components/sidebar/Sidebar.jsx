@@ -2,6 +2,8 @@ import "./sidebar.css";
 
 export const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className="sidebar">
+      <div className="sidebarWrapper"></div>
+    </div>
   )
 }
