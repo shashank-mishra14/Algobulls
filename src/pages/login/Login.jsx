@@ -10,7 +10,13 @@ const Login = () => {
             <span className="loginDesc">Login to explore</span>
             </div>
             <div className="loginRight">
-              <div className="loginBox"></div>
+              <div className="loginBox">
+                <input placeholder="Email" className="loginInput" />
+                <input placeholder="Password" className="loginInput" />
+                <button className="loginButton">Log In</button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="loginRegisterButton">Create a new Account!</button>
+              </div>
             </div>
         </div>
     </div>
