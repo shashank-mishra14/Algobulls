@@ -13,8 +13,20 @@ router.post("/register", async (req, res) => {
       email: req.body.email,
       password: hashedPassword,
     });
+
+    //save user and respond
     const user = await newUser.save();
     res.status(200).json(user);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+//login user
+router.post("/login", async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    !user && res.status(404).send("user not found");
   } catch (err) {
     console.log(err);
   }
